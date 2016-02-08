@@ -3,13 +3,13 @@
  */
 
 var backgrounds = {
-    clear:      'http://49.media.tumblr.com/tumblr_loxgrdOng41qdnwiro1_500.gif',
-    overcast:   'http://31.media.tumblr.com/9412268bfad374091488a8a3af8e82c5/tumblr_mibq3tL5jU1s5t1i4o1_500.gif',
-    snow:       'http://i1005.photobucket.com/albums/af171/shortfuze94/falling-snow.gif',
-    rain:       'http://bestanimations.com/Nature/Water/rain/rain-nature-animated-gif-32.gif',
-    storm:      'http://d75822.medialib.glogster.com/media/f2/f2879921035168e73d6bf8790d114567571488199957d7353774c9e3fa11ff96/storm-gif.gif',
-    fewClouds:  'http://vignette3.wikia.nocookie.net/uncyclopedia/images/e/e2/Cloudsscroll.gif',
-    tornado:    'http://1.bp.blogspot.com/-v9POOIBPyak/VBsdC1_2CbI/AAAAAAAAAh8/TvdYwrgbMU0/s1600/tumblr_mo8k3nMNjB1r4zr2vo2_r1_500.gif'
+    clear:      'img/clear.gif',
+    overcast:   'img/overcast.gif',
+    snow:       'img/snow.gif',
+    rain:       'img/rain.gif',
+    storm:      'img/storm.gif',
+    fewClouds:  'img/fewClouds.gif',
+    tornado:    'img/tornado.gif'
 };
 
 function getPosition() {
@@ -169,7 +169,7 @@ function displayWeather(data) {
             icon = weatherIcons.severe;
             $body.css('background-size', 'cover');
             background = backgrounds.tornado;
-    };
+    }
 
     $body.css('background-image', 'url(' + background + ')');
     $location.html(location);
@@ -218,4 +218,4 @@ function displayWeather(data) {
 
     getPosition();
 
-}())
+}());
