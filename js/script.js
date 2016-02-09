@@ -140,6 +140,7 @@ function displayWeather(data) {
             break;
         case (weatherId === '804'):                        // overcast clouds
             icon = weatherIcons.overcast;
+            $body.css('background-size', 'cover');
             background = backgrounds.overcast;
             break;
         case (weatherId.charAt(0) === '6'):                // snow
@@ -153,6 +154,7 @@ function displayWeather(data) {
             break;
         case (weatherId.charAt(0) === '2'):                // thunderstorm
             icon = weatherIcons.storm;
+            $body.css('background-size', 'cover');
             background = backgrounds.storm;
 
             break;
